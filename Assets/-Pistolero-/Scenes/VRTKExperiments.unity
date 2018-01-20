@@ -1491,14 +1491,14 @@ MonoBehaviour:
   size: 0
   color: {r: 0, g: 1, b: 1, a: 1}
   vertices:
-  - {x: 1.5, y: 0.01, z: 1.125}
-  - {x: 1.5, y: 0.01, z: -1.125}
-  - {x: -1.5, y: 0.01, z: -1.125}
-  - {x: -1.5, y: 0.01, z: 1.125}
-  - {x: 1.65, y: 0.01, z: 1.275}
-  - {x: 1.65, y: 0.01, z: -1.275}
-  - {x: -1.65, y: 0.01, z: -1.275}
-  - {x: -1.65, y: 0.01, z: 1.275}
+  - {x: 1.45, y: 0.01, z: -1.1000001}
+  - {x: -1.45, y: 0.01, z: -1.1000001}
+  - {x: -1.45, y: 0.01, z: 1.1000001}
+  - {x: 1.45, y: 0.01, z: 1.1000001}
+  - {x: 1.6, y: 0.01, z: -1.2500001}
+  - {x: -1.6, y: 0.01, z: -1.2500001}
+  - {x: -1.6, y: 0.01, z: 1.2500001}
+  - {x: 1.6, y: 0.01, z: 1.2500001}
 --- !u!33 &718487764
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1506,7 +1506,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 718487761}
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 2031351290}
 --- !u!23 &718487765
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1522,7 +1522,7 @@ MeshRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 1387265673}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1569,6 +1569,7 @@ GameObject:
   - component: {fileID: 731605261}
   - component: {fileID: 731605264}
   - component: {fileID: 731605263}
+  - component: {fileID: 731605265}
   - component: {fileID: 731605262}
   m_Layer: 0
   m_Name: Camera (eye)
@@ -1594,8 +1595,7 @@ Transform:
 --- !u!114 &731605262
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114278672556431428, guid: b943de00a372f5449bbe850cbc071ee1,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 731605260}
   m_Enabled: 1
@@ -1651,6 +1651,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &731605265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731605260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: de2bf7ffbc8fe26479752e8b61e65e91, type: 2}
 --- !u!1 &775008745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,9 +2313,6 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 306236221}
   - {fileID: 570401383}
 --- !u!4 &1176379573
@@ -2878,6 +2887,39 @@ MonoBehaviour:
   verbose: 0
   createComponents: 1
   updateDynamically: 1
+--- !u!21 &1387265673
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1394635260
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,6 +3700,136 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1968505828}
+--- !u!43 &2031351290
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.6, y: 0, z: 1.2500001}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 13
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 9a99b93f0ad7233ccecc8cbf000000000000803f0000803f0000803f00000000000000009a99b9bf0ad7233ccecc8cbf000000000000803f0000803f0000803f0000803f000000009a99b9bf0ad7233ccecc8c3f000000000000803f0000803f0000803f00000000000000009a99b93f0ad7233ccecc8c3f000000000000803f0000803f0000803f0000803f00000000cdcccc3f0ad7233c0100a0bf000000000000803f0000803f00000000000000000000803fcdccccbf0ad7233c0100a0bf000000000000803f0000803f000000000000803f0000803fcdccccbf0ad7233c0100a03f000000000000803f0000803f00000000000000000000803fcdcccc3f0ad7233c0100a03f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.6, y: 0, z: 1.2500001}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
 --- !u!1 &2089912510
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,6 +4061,7 @@ GameObject:
   - component: {fileID: 2108295228}
   - component: {fileID: 2108295227}
   - component: {fileID: 2108295226}
+  - component: {fileID: 2108295229}
   m_Layer: 0
   m_Name: Camera (head)
   m_TagString: MainCamera
@@ -3971,3 +4144,15 @@ Camera:
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &2108295229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2108295224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: de2bf7ffbc8fe26479752e8b61e65e91, type: 2}
