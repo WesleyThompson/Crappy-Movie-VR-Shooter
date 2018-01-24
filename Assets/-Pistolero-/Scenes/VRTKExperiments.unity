@@ -1173,6 +1173,46 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 49.15
       objectReference: {fileID: 0}
+    - target: {fileID: 82006124019392308, guid: 5584b35f31b9388448fe14d57b975ac1,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: be0a918ed482e4a4992a3008e1b48ca9, type: 3}
+    - target: {fileID: 82419348159159048, guid: 5584b35f31b9388448fe14d57b975ac1,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cca3ab799a1330045ab0cc353b6da00e, type: 3}
+    - target: {fileID: 82255599223108970, guid: 5584b35f31b9388448fe14d57b975ac1,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9aa5fe71e0f840648afb60aeac49ad43, type: 3}
+    - target: {fileID: 82720852140953020, guid: 5584b35f31b9388448fe14d57b975ac1,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 26e21840436473c4b8e66d6f16c56a02, type: 3}
+    - target: {fileID: 82419348159159048, guid: 5584b35f31b9388448fe14d57b975ac1,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82255599223108970, guid: 5584b35f31b9388448fe14d57b975ac1,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82006124019392308, guid: 5584b35f31b9388448fe14d57b975ac1,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82720852140953020, guid: 5584b35f31b9388448fe14d57b975ac1,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
   m_IsPrefabParent: 0
