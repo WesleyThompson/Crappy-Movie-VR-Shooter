@@ -30,7 +30,7 @@ public class PistolController : MonoBehaviour {
         }
 
         //Setup events
-        controllerEvents.SubscribeToButtonAliasEvent(VRTK_ControllerEvents.ButtonAlias.TriggerClick, true, Fire);
+        controllerEvents.TriggerClicked += new ControllerInteractionEventHandler(Fire);
     }
 
     public void Fire(object sender, ControllerInteractionEventArgs e)

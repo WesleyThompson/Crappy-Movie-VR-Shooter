@@ -534,7 +534,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 306236219}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 718487762}
@@ -1118,19 +1118,19 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4220786397713068, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4220786397713068, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.042
+      value: -0.069
       objectReference: {fileID: 0}
     - target: {fileID: 4220786397713068, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.89
+      value: -0.062
       objectReference: {fileID: 0}
     - target: {fileID: 4220786397713068, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.41588402
       objectReference: {fileID: 0}
     - target: {fileID: 4220786397713068, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
       propertyPath: m_LocalRotation.y
@@ -1142,7 +1142,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4220786397713068, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9094177
       objectReference: {fileID: 0}
     - target: {fileID: 4220786397713068, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
       propertyPath: m_RootOrder
@@ -1168,6 +1168,10 @@ Prefab:
     - target: {fileID: 1846292011205832, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220786397713068, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 49.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5584b35f31b9388448fe14d57b975ac1, type: 2}
@@ -1829,7 +1833,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.05
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -2455,8 +2459,8 @@ MonoBehaviour:
   activeScriptingDefineSymbolsWithoutSDKClasses:
   - symbol: VRTK_DEFINE_SDK_OCULUS_AVATAR
     buildTargetGroupName: Standalone
-  scriptAliasLeftController: {fileID: 0}
-  scriptAliasRightController: {fileID: 0}
+  scriptAliasLeftController: {fileID: 1202192266}
+  scriptAliasRightController: {fileID: 1228847334}
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
@@ -2564,6 +2568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1228847335}
   - component: {fileID: 1228847336}
+  - component: {fileID: 1228847337}
   m_Layer: 0
   m_Name: RightController
   m_TagString: Untagged
@@ -2632,6 +2637,17 @@ MonoBehaviour:
   uiClickPressed: 0
   menuPressed: 0
   controllerVisible: 1
+--- !u!114 &1228847337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1228847334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd6c3da4f14c5944a18d5064c1e1005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240522542
 GameObject:
   m_ObjectHideFlags: 0
