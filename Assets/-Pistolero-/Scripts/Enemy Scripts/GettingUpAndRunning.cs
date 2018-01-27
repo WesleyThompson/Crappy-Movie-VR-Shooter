@@ -22,7 +22,7 @@ public class GettingUpAndRunning : MonoBehaviour {
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         target = GameObject.FindGameObjectWithTag("destination").transform;
-        followPlayer.enabled = false;
+        followPlayer.enabled = true;
     }
 
     // Update is called once per frame
