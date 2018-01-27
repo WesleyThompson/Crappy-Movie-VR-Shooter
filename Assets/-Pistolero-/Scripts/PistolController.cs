@@ -31,6 +31,7 @@ public class PistolController : MonoBehaviour {
 
         //Setup events
         controllerEvents.TriggerClicked += new ControllerInteractionEventHandler(Fire);
+        controllerEvents.GripPressed += new ControllerInteractionEventHandler(Reload);
     }
 
     public void Fire(object sender, ControllerInteractionEventArgs e)
@@ -54,10 +55,16 @@ public class PistolController : MonoBehaviour {
 
     public void Reload(object sender, ControllerInteractionEventArgs e)
     {
-        reloadSound.Play();
-        bulletCount = bulletCapacity;
-        isEmpty = false;
-        animator.SetTrigger("Reload");
+        Debug.Log("yo");
+        if (bulletCount == 0)
+        {
+            Debug.Log("waddup");
+            reloadSound.Play();
+            bulletCount = bulletCapacity;
+            SetBulletCount(bulletCount);
+            isEmpty = false;
+            animator.SetTrigger("Reload");
+        } 
     }
 
     public void DropMag(object sender, ControllerInteractionEventArgs e)
