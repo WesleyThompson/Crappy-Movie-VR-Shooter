@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33353560354190164}
   - component: {fileID: 23225645234987340}
   m_Layer: 0
-  m_Name: polySurface1398
+  m_Name: SuppliesCrate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
