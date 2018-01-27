@@ -1126,7 +1126,7 @@ GameObject:
   - component: {fileID: 65558956754751346}
   - component: {fileID: 195110183929568514}
   - component: {fileID: 114448605654921428}
-  - component: {fileID: 114488547284674794}
+  - component: {fileID: 114078879020892050}
   m_Layer: 0
   m_Name: MarkerEnemy
   m_TagString: Untagged
@@ -3606,6 +3606,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114078879020892050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1599006998487550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfacb6bf554c9e24095042b9a4e2bf40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114448605654921428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3615,17 +3626,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a68d648ff7958934aac814f00e00bdda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114488547284674794
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1599006998487550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ce89f2e7e45db246a1c6bb26b97c740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!137 &137011317584591554
