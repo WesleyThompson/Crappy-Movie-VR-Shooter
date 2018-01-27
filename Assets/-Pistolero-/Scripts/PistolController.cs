@@ -14,6 +14,7 @@ public class PistolController : MonoBehaviour {
     [SerializeField] private AudioSource reloadSound;
     [SerializeField] private AudioSource dropMagSound;
     [SerializeField] private AudioSource emptyMagFireSound;
+    [SerializeField] private ParticleSystem flash;
 
     private bool isEmpty = false;
     private Animator animator;
@@ -39,6 +40,7 @@ public class PistolController : MonoBehaviour {
         if(!isEmpty)
         {
             fireSound.Play();
+            flash.Play();
             bulletCount--;
             SetBulletCount(bulletCount);
             if (bulletCount == 0)
