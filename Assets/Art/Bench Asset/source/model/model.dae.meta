@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: fdd60bf4ed194864bba3f11ea801587c
+timeCreated: 1517084944
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bench_Redy
+    100002: //RootNode
+    100004: WoodenBlock_002
+    100006: WoodenBlock_030
+    100008: WoodenBlock_031
+    100010: WoodenBlock_032
+    100012: WoodenBlock_033
+    100014: WoodenBlock_034
+    100016: WoodenBlock_035
+    100018: WoodenBlock_036
+    100020: WoodenBlock_037
+    100022: WoodenBlock_038
+    100024: WoodenBlock_039
+    100026: WoodenBlock_040
+    100028: WoodenBlock_041
+    100030: WoodenBlock_042
+    100032: WoodenBlock_043
+    100034: WoodenBlock_044
+    100036: WoodenBlock_045
+    100038: WoodenBlock_046
+    100040: WoodenBlock_047
+    100042: WoodenBlock_048
+    100044: WoodenBlock_049
+    100046: WoodenBlock_050
+    400000: Bench_Redy
+    400002: //RootNode
+    400004: WoodenBlock_002
+    400006: WoodenBlock_030
+    400008: WoodenBlock_031
+    400010: WoodenBlock_032
+    400012: WoodenBlock_033
+    400014: WoodenBlock_034
+    400016: WoodenBlock_035
+    400018: WoodenBlock_036
+    400020: WoodenBlock_037
+    400022: WoodenBlock_038
+    400024: WoodenBlock_039
+    400026: WoodenBlock_040
+    400028: WoodenBlock_041
+    400030: WoodenBlock_042
+    400032: WoodenBlock_043
+    400034: WoodenBlock_044
+    400036: WoodenBlock_045
+    400038: WoodenBlock_046
+    400040: WoodenBlock_047
+    400042: WoodenBlock_048
+    400044: WoodenBlock_049
+    400046: WoodenBlock_050
+    2100000: Bench
+    2300000: Bench_Redy
+    2300002: WoodenBlock_002
+    2300004: WoodenBlock_030
+    2300006: WoodenBlock_031
+    2300008: WoodenBlock_032
+    2300010: WoodenBlock_033
+    2300012: WoodenBlock_034
+    2300014: WoodenBlock_035
+    2300016: WoodenBlock_036
+    2300018: WoodenBlock_037
+    2300020: WoodenBlock_038
+    2300022: WoodenBlock_039
+    2300024: WoodenBlock_040
+    2300026: WoodenBlock_041
+    2300028: WoodenBlock_042
+    2300030: WoodenBlock_043
+    2300032: WoodenBlock_044
+    2300034: WoodenBlock_045
+    2300036: WoodenBlock_046
+    2300038: WoodenBlock_047
+    2300040: WoodenBlock_048
+    2300042: WoodenBlock_049
+    2300044: WoodenBlock_050
+    3300000: Bench_Redy
+    3300002: WoodenBlock_002
+    3300004: WoodenBlock_030
+    3300006: WoodenBlock_031
+    3300008: WoodenBlock_032
+    3300010: WoodenBlock_033
+    3300012: WoodenBlock_034
+    3300014: WoodenBlock_035
+    3300016: WoodenBlock_036
+    3300018: WoodenBlock_037
+    3300020: WoodenBlock_038
+    3300022: WoodenBlock_039
+    3300024: WoodenBlock_040
+    3300026: WoodenBlock_041
+    3300028: WoodenBlock_042
+    3300030: WoodenBlock_043
+    3300032: WoodenBlock_044
+    3300034: WoodenBlock_045
+    3300036: WoodenBlock_046
+    3300038: WoodenBlock_047
+    3300040: WoodenBlock_048
+    3300042: WoodenBlock_049
+    3300044: WoodenBlock_050
+    4300000: Bench_Redy
+    4300002: WoodenBlock_002
+    4300004: WoodenBlock_030
+    4300006: WoodenBlock_031
+    4300008: WoodenBlock_032
+    4300010: WoodenBlock_033
+    4300012: WoodenBlock_034
+    4300014: WoodenBlock_035
+    4300016: WoodenBlock_036
+    4300018: WoodenBlock_037
+    4300020: WoodenBlock_038
+    4300022: WoodenBlock_039
+    4300024: WoodenBlock_040
+    4300026: WoodenBlock_041
+    4300028: WoodenBlock_042
+    4300030: WoodenBlock_043
+    4300032: WoodenBlock_044
+    4300034: WoodenBlock_045
+    4300036: WoodenBlock_046
+    4300038: WoodenBlock_047
+    4300040: WoodenBlock_048
+    4300042: WoodenBlock_049
+    4300044: WoodenBlock_050
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bench
+    second: {fileID: 2100000, guid: 40577424c09db054ea8909b86b541c63, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

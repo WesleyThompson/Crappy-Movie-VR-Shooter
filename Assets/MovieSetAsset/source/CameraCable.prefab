@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33290822400342438}
   - component: {fileID: 23585180841183818}
   m_Layer: 0
-  m_Name: pCylinder64
+  m_Name: CameraCable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

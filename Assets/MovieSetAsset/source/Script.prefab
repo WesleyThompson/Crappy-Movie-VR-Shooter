@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33820812482604744}
   - component: {fileID: 23376127340635560}
   m_Layer: 0
-  m_Name: polySurface1559
+  m_Name: Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

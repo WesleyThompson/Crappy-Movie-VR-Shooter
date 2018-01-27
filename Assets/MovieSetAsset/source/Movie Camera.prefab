@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33877588838926380}
   - component: {fileID: 23365392466233348}
   m_Layer: 0
-  m_Name: polySurface1340
+  m_Name: Movie Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33511483011779790}
   - component: {fileID: 23333604700886890}
   m_Layer: 0
-  m_Name: polySurface1400
+  m_Name: Director Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
