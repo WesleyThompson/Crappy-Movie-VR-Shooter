@@ -30,6 +30,6 @@ public class EnemyDying : MonoBehaviour {
     public void EnemyDies()
     {
         animator.SetTrigger("Die");
-        navMeshAgent.isStopped = true;
+        navMeshAgent.isStopped = true;  
     }
 }
