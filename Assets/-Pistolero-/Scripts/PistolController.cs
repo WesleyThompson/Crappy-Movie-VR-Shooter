@@ -9,6 +9,8 @@ public class PistolController : MonoBehaviour {
     public VRTK_ControllerEvents controllerEvents;
     public int bulletCapacity;
     public int bulletCount;
+    public float maxTime = .5f;
+    private float timeRemaining;
 
     [SerializeField] private AudioSource fireSound;
     [SerializeField] private AudioSource reloadSound;
@@ -30,43 +32,55 @@ public class PistolController : MonoBehaviour {
             animator.Play("PistolMovingPartsEmpty");
         }
 
+        timeRemaining = maxTime;
+
         //Setup events
         controllerEvents.TriggerClicked += new ControllerInteractionEventHandler(Fire);
         controllerEvents.GripPressed += new ControllerInteractionEventHandler(Reload);
     }
 
+    private void Update()
+    {
+        timeRemaining -= Time.deltaTime;
+    }
+
     public void Fire(object sender, ControllerInteractionEventArgs e)
     {
-        if(!isEmpty)
+        if (!isEmpty)
         {
-            fireSound.Play();
-            flash.Play();
-            bulletCount--;
-            SetBulletCount(bulletCount);
-            if (bulletCount == 0)
+            if (timeRemaining < 0)
             {
-                isEmpty = true;
-            }
-            animator.SetTrigger("Fire");
 
-            //Shoot enemies and stuff
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.forward, out hit))
-            {
-                Debug.Log("Hit: " + hit.transform.name);
-                if(hit.transform.CompareTag("enemy"))
+                fireSound.Play();
+                flash.Play();
+                bulletCount--;
+                SetBulletCount(bulletCount);
+                if (bulletCount == 0)
                 {
-                    hit.transform.GetComponent<EnemyDying>().EnemyDies();
+                    isEmpty = true;
                 }
-                else if(hit.transform.CompareTag("menu"))
+                animator.SetTrigger("Fire");
+
+                //Shoot enemies and stuff
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, transform.forward, out hit))
                 {
-                    hit.transform.GetComponent<PistoleroMenuObj>().ShotMenu();
+                    Debug.Log("Hit: " + hit.transform.name);
+                    if (hit.transform.CompareTag("enemy"))
+                    {
+                        hit.transform.GetComponent<EnemyDying>().EnemyDies();
+                    }
+                    else if (hit.transform.CompareTag("menu"))
+                    {
+                        hit.transform.GetComponent<PistoleroMenuObj>().ShotMenu();
+                    }
                 }
+                timeRemaining = maxTime;
             }
-        }
-        else
-        {
-            emptyMagFireSound.Play();
+            else
+            {
+                emptyMagFireSound.Play();
+            }
         }
     }
 

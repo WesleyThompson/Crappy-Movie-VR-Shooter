@@ -34,6 +34,7 @@ public class SoundController : MonoBehaviour {
         audio.volume = musicVolume;
         audio.time = 54.85f;
         audio.Play();
+
     }
 
     IEnumerator FadeSong()
@@ -51,5 +52,6 @@ public class SoundController : MonoBehaviour {
     public void StopSong()
     {
         audio.Stop();
+        Debug.Log("i'm getting called for no reason");
     }
 }
