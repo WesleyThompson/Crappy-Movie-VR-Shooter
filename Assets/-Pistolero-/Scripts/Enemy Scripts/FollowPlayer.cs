@@ -7,15 +7,36 @@ public class FollowPlayer : MonoBehaviour {
 
     private NavMeshAgent navMeshAgent;
     private Transform target;
+    private bool foundTarget = false;
 
 	// Use this for initialization
 	void Start () {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        GameObject targetObj = GameObject.FindGameObjectWithTag("Player");
+
+        if(targetObj)
+        {
+            target = targetObj.transform;
+            foundTarget = true;
+        }
+
         navMeshAgent = GetComponent<NavMeshAgent>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        navMeshAgent.SetDestination(target.position);
+        if (!foundTarget)
+        {
+            GameObject targetObj = GameObject.FindGameObjectWithTag("Player");
+            if (targetObj)
+            {
+                target = targetObj.transform;
+                navMeshAgent.SetDestination(targetObj.transform.position);
+                foundTarget = true;
+            }
+        }
+        else
+        {
+            navMeshAgent.SetDestination(target.position);
+        }
 	}
 }
