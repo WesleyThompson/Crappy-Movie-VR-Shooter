@@ -7,11 +7,13 @@ public class EnemyDying : MonoBehaviour {
 
     private Animator animator;
     private NavMeshAgent navMeshAgent;
+    private CapsuleCollider capsule;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+        capsule = GetComponent<CapsuleCollider>();
     }
 
     // Use this for initialization
@@ -30,6 +32,7 @@ public class EnemyDying : MonoBehaviour {
     public void EnemyDies()
     {
         animator.SetTrigger("Die");
-        navMeshAgent.isStopped = true;  
+        navMeshAgent.isStopped = true;
+        capsule.enabled = false;
     }
 }
