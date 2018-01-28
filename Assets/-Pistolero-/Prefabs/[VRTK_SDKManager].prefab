@@ -3954,6 +3954,8 @@ MonoBehaviour:
   controllerEvents: {fileID: 0}
   bulletCapacity: 7
   bulletCount: 7
+  maxTime: 0.02
+  timeRemaining: 0
   fireSound: {fileID: 82178509936694332}
   reloadSound: {fileID: 82785252212218982}
   dropMagSound: {fileID: 82091253570528658}
@@ -4388,6 +4390,8 @@ MonoBehaviour:
   controllerEvents: {fileID: 0}
   bulletCapacity: 7
   bulletCount: 7
+  maxTime: 0.005
+  timeRemaining: 0
   fireSound: {fileID: 82633137667797880}
   reloadSound: {fileID: 82236588328072974}
   dropMagSound: {fileID: 82855810451205526}

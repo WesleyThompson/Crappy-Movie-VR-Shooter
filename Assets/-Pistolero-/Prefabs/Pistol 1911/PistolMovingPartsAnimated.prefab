@@ -1065,6 +1065,8 @@ MonoBehaviour:
   controllerEvents: {fileID: 0}
   bulletCapacity: 7
   bulletCount: 7
+  maxTime: 0
+  timeRemaining: 0
   fireSound: {fileID: 82720852140953020}
   reloadSound: {fileID: 82006124019392308}
   dropMagSound: {fileID: 82419348159159048}

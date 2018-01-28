@@ -9,8 +9,11 @@ public class PistolController : MonoBehaviour {
     public VRTK_ControllerEvents controllerEvents;
     public int bulletCapacity;
     public int bulletCount;
-    public float maxTime = .5f;
-    private float timeRemaining;
+    public float maxTime = .005f;
+    public float timeRemaining;
+
+    AnimatorClipInfo[] m_CurrentClipInfo;
+    string m_ClipName;
 
     [SerializeField] private AudioSource fireSound;
     [SerializeField] private AudioSource reloadSound;
@@ -32,7 +35,7 @@ public class PistolController : MonoBehaviour {
             animator.Play("PistolMovingPartsEmpty");
         }
 
-        timeRemaining = maxTime;
+        timeRemaining = 0;
 
         //Setup events
         controllerEvents.TriggerClicked += new ControllerInteractionEventHandler(Fire);
@@ -41,14 +44,18 @@ public class PistolController : MonoBehaviour {
 
     private void Update()
     {
-        timeRemaining -= Time.deltaTime;
+        if(timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+        }
     }
 
     public void Fire(object sender, ControllerInteractionEventArgs e)
     {
-        if (!isEmpty)
+        
+        if (timeRemaining <= 0)
         {
-            if (timeRemaining < 0)
+            if (!isEmpty)
             {
 
                 fireSound.Play();
@@ -80,8 +87,10 @@ public class PistolController : MonoBehaviour {
             else
             {
                 emptyMagFireSound.Play();
+                animator.Play("PistolMovingPartsFireLast");
             }
         }
+        
     }
 
     public void Reload(object sender, ControllerInteractionEventArgs e)
