@@ -2711,7 +2711,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5792,7 +5792,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -6349,7 +6349,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -6768,7 +6768,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -6847,8 +6847,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1592338491}
-        m_MethodName: StartWave
-        m_Mode: 3
+        m_MethodName: SuccessFade
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6960,7 +6960,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -8094,7 +8094,7 @@ Prefab:
     - target: {fileID: 224967451507438984, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 397
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 224967451507438984, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -9960,6 +9960,7 @@ MonoBehaviour:
   wave1Success: {fileID: 1871391809}
   wave1Fail: {fileID: 370641067}
   wave1Fade: {fileID: 761726061}
+  wave1SuccessFade: {fileID: 29441083}
   onStartWave1:
     m_PersistentCalls:
       m_Calls: []
@@ -9970,6 +9971,7 @@ MonoBehaviour:
   wave2Success: {fileID: 1125732957}
   wave2Fail: {fileID: 2143970084}
   wave2Fade: {fileID: 190200640}
+  wave2SuccessFade: {fileID: 328210321}
   onStartWave2:
     m_PersistentCalls:
       m_Calls: []
@@ -10400,7 +10402,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -10934,7 +10936,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -11815,7 +11817,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -11894,12 +11896,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1592338491}
-        m_MethodName: StartWave
-        m_Mode: 3
+        m_MethodName: SuccessFade
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13318,7 +13320,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 20
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

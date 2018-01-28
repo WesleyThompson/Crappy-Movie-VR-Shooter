@@ -17,6 +17,7 @@ public class PistoleroGameManager : MonoBehaviour {
     public TriggerOnAudioEnd wave1Success;
     public TriggerOnAudioEnd wave1Fail;
     public VRTK_HeadsetFade wave1Fade;
+    public VRTK_HeadsetFade wave1SuccessFade;
     public UnityEvent onStartWave1;
     [Header("Wave Two")]
     public int wave2Count;
@@ -24,6 +25,7 @@ public class PistoleroGameManager : MonoBehaviour {
     public TriggerOnAudioEnd wave2Success;
     public TriggerOnAudioEnd wave2Fail;
     public VRTK_HeadsetFade wave2Fade;
+    public VRTK_HeadsetFade wave2SuccessFade;
     public UnityEvent onStartWave2;
     [Header("Wave Three")]
     public int wave3Count;
@@ -143,6 +145,24 @@ public class PistoleroGameManager : MonoBehaviour {
                 break;
             case 3:
                 wave3Fade.Fade(Color.black, 3);
+                break;
+            default:
+                Debug.Log("Cats and dogs living together.2");
+                break;
+        }
+    }
+
+    public void SuccessFade()
+    {
+        switch (currentWave)
+        {
+            case 1:
+                wave1SuccessFade.Fade(Color.black, 3);
+                break;
+            case 2:
+                wave2SuccessFade.Fade(Color.black, 3);
+                break;
+            case 3:
                 break;
             default:
                 Debug.Log("Cats and dogs living together.2");
