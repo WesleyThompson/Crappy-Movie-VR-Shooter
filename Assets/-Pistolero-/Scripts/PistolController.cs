@@ -48,6 +48,17 @@ public class PistolController : MonoBehaviour {
                 isEmpty = true;
             }
             animator.SetTrigger("Fire");
+
+            //Shoot enemies
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.forward, out hit))
+            {
+                Debug.Log("Hit: " + hit.transform.name);
+                if(hit.transform.CompareTag("enemy"))
+                {
+                    hit.transform.GetComponent<EnemyDying>().EnemyDies();
+                }
+            }
         }
         else
         {
