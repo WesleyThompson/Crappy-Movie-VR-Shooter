@@ -237,7 +237,97 @@ ModelImporter:
     4300078: polySurface1542
     4300080: A01_Projector:polySurface1
     4300082: polySurface1559
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Camera
+    second: {fileID: 2100000, guid: 54cdb6838384188419b9a3088e0c94b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chair
+    second: {fileID: 2100000, guid: 0dfca488757e21b459d08aa4c118ec16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clap
+    second: {fileID: 2100000, guid: 9dc395643bb44a34db8e814174c0df9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K_Shoes
+    second: {fileID: 2100000, guid: 636e2f4a25091db49937847aa15adeb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K_pant
+    second: {fileID: 2100000, guid: 0be65af4a336f9e4a9adf414637f0550, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K_skin
+    second: {fileID: 2100000, guid: 6ced5ba47149f42449746213c4b2dc18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K_vest
+    second: {fileID: 2100000, guid: f067eb5602972f9459883995834d1c2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: K_veuchs
+    second: {fileID: 2100000, guid: 94895356d3359dc4383d3786e0a99bd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sky
+    second: {fileID: 2100000, guid: 5c881e7c173e999439972ff5f9f656ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TV
+    second: {fileID: 2100000, guid: 5a490cc2a8cf6fe4c9ee5258e5159e00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cahiers
+    second: {fileID: 2100000, guid: cea12a1df985f214194fa86b945be6fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caisse
+    second: {fileID: 2100000, guid: 55a53964dd50832499972fbe9184041b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cendrier
+    second: {fileID: 2100000, guid: b7977c0ac99c07a48a798476064e3736, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: clopes
+    second: {fileID: 2100000, guid: 0aebaecafcbea7a4a85180bd5474e28e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fumee
+    second: {fileID: 2100000, guid: 18118a6268329044b9139aa87ed1b661, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 0a9412ec052d3a1409ebfbe4f94d7303, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: parquet
+    second: {fileID: 2100000, guid: 0a3c143afa40c2445b628b32cdb6ad44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: table
+    second: {fileID: 2100000, guid: a1e7dacaaa5d68046b1c5820f2963f36, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
