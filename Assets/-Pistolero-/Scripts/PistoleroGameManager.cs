@@ -35,6 +35,7 @@ public class PistoleroGameManager : MonoBehaviour {
     public VRTK_HeadsetFade wave3Fade;
     public UnityEvent onStartWave3;
 
+    public SoundController sc;
     public SpawnController spawnController;
     public VRTK_HeadsetFade EndFade;
     public GameObject leftPistol;
@@ -92,6 +93,7 @@ public class PistoleroGameManager : MonoBehaviour {
     {
         if (inWave)
         {
+            sc.StopSong();
             inWave = false;
 
             if (success)

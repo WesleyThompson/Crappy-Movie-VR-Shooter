@@ -70,4 +70,9 @@ public class SpawnController : MonoBehaviour {
         maxTime = timeBetweenSpawns;
         StartWave();
     }
+
+    public void ResetActiveEnemies()
+    {
+        activeEnemies.Clear();
+    }
 }

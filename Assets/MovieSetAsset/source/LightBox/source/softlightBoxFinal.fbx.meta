@@ -17,7 +17,42 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cube
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 9fd058773aaee0047a16bd34aec8b5ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shaft
+    second: {fileID: 2100000, guid: b23d4b3b3932e194491b4f90a4555d93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supportArm
+    second: {fileID: 2100000, guid: da0ef98e724b95547b0a6924b57d1994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supportLeg
+    second: {fileID: 2100000, guid: 9d43cb991b9c4104b842b898e56a84ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supportTriangle
+    second: {fileID: 2100000, guid: 880d7562439494a49b1865956e85f5c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supportTriangle2
+    second: {fileID: 2100000, guid: 03a075d40cd043c4191c9f5fe3fa2c3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supportWheel
+    second: {fileID: 2100000, guid: 3ca6909498288684abadd3825f3e4573, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
