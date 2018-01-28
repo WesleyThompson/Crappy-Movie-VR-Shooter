@@ -60,7 +60,7 @@ public class PistolController : MonoBehaviour {
                 }
                 else if(hit.transform.CompareTag("menu"))
                 {
-
+                    hit.transform.GetComponent<PistoleroMenuObj>().ShotMenu();
                 }
             }
         }
@@ -72,10 +72,8 @@ public class PistolController : MonoBehaviour {
 
     public void Reload(object sender, ControllerInteractionEventArgs e)
     {
-        Debug.Log("yo");
         if (bulletCount == 0)
         {
-            Debug.Log("waddup");
             reloadSound.Play();
             bulletCount = bulletCapacity;
             SetBulletCount(bulletCount);
