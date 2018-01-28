@@ -43,6 +43,17 @@ public class PistoleroGameManager : MonoBehaviour {
     {
     }
 
+    private void Update()
+    {
+        if(inWave)
+        {
+            if(spawnController.numberOfEnemies == 0)
+            {
+                EndWave(true);
+            }
+        }
+    }
+
     public void StartGame()
     {
         onStartGame.Invoke();
@@ -51,6 +62,7 @@ public class PistoleroGameManager : MonoBehaviour {
     public void StartWave(int waveNum)
     {
         currentWave = waveNum;
+        inWave = true;
         switch(currentWave)
         {
             case 1:
@@ -131,5 +143,22 @@ public class PistoleroGameManager : MonoBehaviour {
     public void DisableGuns()
     {
 
+    }
+
+    public void RecallAllEnemy()
+    {
+        foreach (GettingUpAndRunning g in GameObject.FindObjectsOfType<GettingUpAndRunning>())
+        {
+            g.EnemyGetsUp();
+            g.EnemyRunsBack();
+        }
+    }
+
+    public void DestroyAllEnemy()
+    {
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("enemy"))
+        {
+            Destroy(obj);
+        }
     }
 }

@@ -10,6 +10,7 @@ public class SpawnController : MonoBehaviour {
     public bool waveBegins = false;
     public int numberOfEnemies = 20;
     public GameObject enemySpawn;
+    public List<GameObject> activeEnemies = new List<GameObject>();
 
 	// Use this for initialization
 	void Start () {
@@ -45,7 +46,7 @@ public class SpawnController : MonoBehaviour {
         if (timeRemaining <= 0 && numberOfEnemies > 0)
         {
             GameObject enemySpawnLocation = spawnPoints[Random.Range(0,spawnPoints.Count -1)];
-            Instantiate(enemySpawn, enemySpawnLocation.transform.position, enemySpawnLocation.transform.rotation );
+            activeEnemies.Add(Instantiate(enemySpawn, enemySpawnLocation.transform.position, enemySpawnLocation.transform.rotation ));
             numberOfEnemies -= 1;
             timeRemaining = maxTime;
         }
