@@ -21,7 +21,7 @@ public class GettingUpAndRunning : MonoBehaviour {
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-        target = GameObject.FindGameObjectWithTag("destination").transform;
+        //target = GameObject.FindGameObjectWithTag("destination").transform;
         followPlayer.enabled = true;
     }
 
