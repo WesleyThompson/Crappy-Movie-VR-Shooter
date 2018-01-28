@@ -49,7 +49,7 @@ public class PistolController : MonoBehaviour {
             }
             animator.SetTrigger("Fire");
 
-            //Shoot enemies
+            //Shoot enemies and stuff
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.forward, out hit))
             {
@@ -57,6 +57,10 @@ public class PistolController : MonoBehaviour {
                 if(hit.transform.CompareTag("enemy"))
                 {
                     hit.transform.GetComponent<EnemyDying>().EnemyDies();
+                }
+                else if(hit.transform.CompareTag("menu"))
+                {
+
                 }
             }
         }

@@ -8,6 +8,7 @@ TagManager:
   - Fire
   - enemy
   - destination
+  - menu
   layers:
   - Default
   - TransparentFX
