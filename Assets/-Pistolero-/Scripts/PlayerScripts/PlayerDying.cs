@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerDying : MonoBehaviour {
 
+    public UnityEvent PlayerDies;
+    
     // Use this for initialization
     void Start()
     {
@@ -22,6 +25,7 @@ public class PlayerDying : MonoBehaviour {
         if (other.CompareTag("enemy"))
         {
             Debug.Log("You died idiot");
+            PlayerDies.Invoke();
         }
     }
 }
