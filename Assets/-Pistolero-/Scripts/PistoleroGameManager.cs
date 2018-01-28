@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using VRTK;
+using VRTK.UnityEventHelper;
 
 public class PistoleroGameManager : MonoBehaviour {
 
@@ -29,7 +31,7 @@ public class PistoleroGameManager : MonoBehaviour {
     public UnityEvent onStartWave3;
 
     public SpawnController spawnController;
-
+    public VRTK_HeadsetFade EndFade;
     public GameObject leftPistol;
     public GameObject rightPistol;
 
@@ -39,7 +41,6 @@ public class PistoleroGameManager : MonoBehaviour {
 
     private void Awake()
     {
-        fade = GetComponent<VRTK_HeadsetFade>();
     }
 
     public void StartGame()
@@ -77,13 +78,13 @@ public class PistoleroGameManager : MonoBehaviour {
             switch (currentWave)
             {
                 case 1:
-                    
+                    wave1Success.StartAudio();
                     break;
                 case 2:
-                    
+                    wave2Success.StartAudio();
                     break;
                 case 3:
-                    
+                    wave3Success.StartAudio();
                     break;
                 default:
                     Debug.Log("Cats and dogs living together.2");
@@ -95,13 +96,13 @@ public class PistoleroGameManager : MonoBehaviour {
             switch (currentWave)
             {
                 case 1:
-
+                    wave1Fail.StartAudio();
                     break;
                 case 2:
-
+                    wave2Fail.StartAudio();
                     break;
                 case 3:
-
+                    wave3Fail.StartAudio();
                     break;
                 default:
                     Debug.Log("Cats and dogs living together.2");
@@ -113,6 +114,11 @@ public class PistoleroGameManager : MonoBehaviour {
     }
 
     public void EndGame()
+    {
+        EndFade.Fade(Color.black, 1);
+    }
+
+    public void ReloadLevel()
     {
         SceneManager.LoadScene(0);
     }
