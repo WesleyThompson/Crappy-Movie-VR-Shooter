@@ -16,18 +16,21 @@ public class PistoleroGameManager : MonoBehaviour {
     public float wave1SpawnDelay;
     public TriggerOnAudioEnd wave1Success;
     public TriggerOnAudioEnd wave1Fail;
+    public VRTK_HeadsetFade wave1Fade;
     public UnityEvent onStartWave1;
     [Header("Wave Two")]
     public int wave2Count;
     public float wave2SpawnDelay;
     public TriggerOnAudioEnd wave2Success;
     public TriggerOnAudioEnd wave2Fail;
+    public VRTK_HeadsetFade wave2Fade;
     public UnityEvent onStartWave2;
     [Header("Wave Three")]
     public int wave3Count;
     public float wave3SpawnDelay;
     public TriggerOnAudioEnd wave3Success;
     public TriggerOnAudioEnd wave3Fail;
+    public VRTK_HeadsetFade wave3Fade;
     public UnityEvent onStartWave3;
 
     public SpawnController spawnController;
@@ -47,7 +50,7 @@ public class PistoleroGameManager : MonoBehaviour {
     {
         if(inWave)
         {
-            if(spawnController.numberOfEnemies == 0)
+            if(spawnController.activeEnemies.Count == 0 && spawnController.firstSpawn == true)
             {
                 EndWave(true);
             }
@@ -85,44 +88,66 @@ public class PistoleroGameManager : MonoBehaviour {
 
     public void EndWave(bool success)
     {
-        if(success)
+        if (inWave)
         {
-            switch (currentWave)
+            inWave = false;
+
+            if (success)
             {
-                case 1:
-                    wave1Success.StartAudio();
-                    break;
-                case 2:
-                    wave2Success.StartAudio();
-                    break;
-                case 3:
-                    wave3Success.StartAudio();
-                    break;
-                default:
-                    Debug.Log("Cats and dogs living together.2");
-                    break;
+                switch (currentWave)
+                {
+                    case 1:
+                        wave1Success.StartAudio();
+                        break;
+                    case 2:
+                        wave2Success.StartAudio();
+                        break;
+                    case 3:
+                        wave3Success.StartAudio();
+                        break;
+                    default:
+                        Debug.Log("Cats and dogs living together.2");
+                        break;
+                }
+            }
+            else
+            {
+                switch (currentWave)
+                {
+                    case 1:
+                        wave1Fail.StartAudio();
+                        break;
+                    case 2:
+                        wave2Fail.StartAudio();
+                        break;
+                    case 3:
+                        wave3Fail.StartAudio();
+                        break;
+                    default:
+                        Debug.Log("Cats and dogs living together.2");
+                        break;
+                }
             }
         }
-        else
+    }
+
+    public void FailFade()
+    {
+        switch (currentWave)
         {
-            switch (currentWave)
-            {
-                case 1:
-                    wave1Fail.StartAudio();
-                    break;
-                case 2:
-                    wave2Fail.StartAudio();
-                    break;
-                case 3:
-                    wave3Fail.StartAudio();
-                    break;
-                default:
-                    Debug.Log("Cats and dogs living together.2");
-                    break;
-            }
+            case 1:
+                wave1Fade.Fade(Color.black, 3);
+                break;
+            case 2:
+                wave2Fade.Fade(Color.black, 3);
+                break;
+            case 3:
+                wave3Fade.Fade(Color.black, 3);
+                break;
+            default:
+                Debug.Log("Cats and dogs living together.2");
+                break;
         }
-
-
     }
 
     public void EndGame()
