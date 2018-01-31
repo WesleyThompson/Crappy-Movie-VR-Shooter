@@ -53,6 +53,11 @@ public class PistoleroGameManager : MonoBehaviour {
     {
         if(inWave)
         {
+            if(spawnController.activeEnemies.Count == 0)
+            {
+                Debug.Log("Zero enemies left");
+            }
+
             if(spawnController.activeEnemies.Count == 0 && spawnController.firstSpawn == true)
             {
                 EndWave(true);

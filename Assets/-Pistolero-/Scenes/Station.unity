@@ -235,18 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnHeadsetFadeStart:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1592338491}
-        m_MethodName: RecallAllEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_HeadsetFade_UnityEvents+HeadsetFadeEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnHeadsetFadeComplete:
@@ -920,18 +909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnHeadsetFadeStart:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1592338491}
-        m_MethodName: RecallAllEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_HeadsetFade_UnityEvents+HeadsetFadeEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnHeadsetFadeComplete:
@@ -1203,18 +1181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnHeadsetFadeStart:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1592338491}
-        m_MethodName: RecallAllEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_HeadsetFade_UnityEvents+HeadsetFadeEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnHeadsetFadeComplete:
@@ -2491,18 +2458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnHeadsetFadeStart:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1592338491}
-        m_MethodName: RecallAllEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_HeadsetFade_UnityEvents+HeadsetFadeEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnHeadsetFadeComplete:
@@ -5248,18 +5204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnHeadsetFadeStart:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1592338491}
-        m_MethodName: RecallAllEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_HeadsetFade_UnityEvents+HeadsetFadeEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnHeadsetFadeComplete:
@@ -8122,7 +8067,7 @@ Prefab:
     - target: {fileID: 224711997401166860, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 224711997401166860, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8132,7 +8077,7 @@ Prefab:
     - target: {fileID: 224711997401166860, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 224489886895541394, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8152,7 +8097,7 @@ Prefab:
     - target: {fileID: 224489886895541394, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 224489886895541394, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8162,7 +8107,7 @@ Prefab:
     - target: {fileID: 224489886895541394, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 224086701996520166, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8182,7 +8127,7 @@ Prefab:
     - target: {fileID: 224086701996520166, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 224086701996520166, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8192,7 +8137,7 @@ Prefab:
     - target: {fileID: 224086701996520166, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 224045508129547824, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8212,7 +8157,7 @@ Prefab:
     - target: {fileID: 224045508129547824, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 224045508129547824, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8222,7 +8167,7 @@ Prefab:
     - target: {fileID: 224045508129547824, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 224417120679016198, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8242,7 +8187,7 @@ Prefab:
     - target: {fileID: 224417120679016198, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 224417120679016198, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8252,7 +8197,7 @@ Prefab:
     - target: {fileID: 224417120679016198, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 224033440417116622, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -8417,7 +8362,7 @@ Prefab:
     - target: {fileID: 224967451507438984, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1100
+      value: 885
       objectReference: {fileID: 0}
     - target: {fileID: 224967451507438984, guid: a8f8816d75bfdd74da0048563dcbae55,
         type: 2}
@@ -11242,6 +11187,11 @@ Prefab:
         type: 2}
       propertyPath: musicVolume
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 82265913134152100, guid: 703986e2b434fcc4ab0a9a9989ff79e8,
+        type: 2}
+      propertyPath: Priority
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 703986e2b434fcc4ab0a9a9989ff79e8, type: 2}

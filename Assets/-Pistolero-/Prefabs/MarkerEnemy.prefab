@@ -3597,7 +3597,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 63
+  Priority: 180
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -3689,6 +3689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: d99cd09c7923f7b4790dffec198593e0, type: 3}
+  spawner: {fileID: 0}
 --- !u!114 &114183074002214422
 MonoBehaviour:
   m_ObjectHideFlags: 1
