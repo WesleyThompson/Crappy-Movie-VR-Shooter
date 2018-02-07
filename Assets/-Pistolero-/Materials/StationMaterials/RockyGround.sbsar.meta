@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0ba5c71128d41174189cbeaba1d82985
-timeCreated: 1517071933
+timeCreated: 1517969931
 licenseType: Free
 SubstanceImporter:
   externalObjects: {}
@@ -241,7 +241,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   deletedPrototypes: []
   userData: 
   assetBundleName: 

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5bf0411f8614f4a4d9e20c54ce3e0d23
-timeCreated: 1517139078
+timeCreated: 1517969873
 licenseType: Free
 SubstanceImporter:
   externalObjects: {}
@@ -177,7 +177,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   - serializedVersion: 16
     name: platform_concrete
     prototypeName: concrete_flat_surface
@@ -349,7 +349,7 @@ SubstanceImporter:
       textureWidth: 1024
       textureHeight: 1024
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   deletedPrototypes: []
   userData: 
   assetBundleName: 
