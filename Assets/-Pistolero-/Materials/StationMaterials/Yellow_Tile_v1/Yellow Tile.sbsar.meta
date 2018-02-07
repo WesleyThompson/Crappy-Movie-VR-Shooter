@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 3fda9d7846bb4cc44a22ce1ad2796656
-timeCreated: 1517072705
+timeCreated: 1517969907
 licenseType: Free
 SubstanceImporter:
   externalObjects: {}
@@ -145,7 +145,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   - serializedVersion: 16
     name: subway_edge
     prototypeName: New_Graph
@@ -285,7 +285,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   deletedPrototypes: []
   userData: 
   assetBundleName: 

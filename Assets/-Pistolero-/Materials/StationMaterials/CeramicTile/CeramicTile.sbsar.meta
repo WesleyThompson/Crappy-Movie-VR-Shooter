@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1ad624d1c444d1145b6020e33f6e2e95
-timeCreated: 1517087052
+timeCreated: 1517969861
 licenseType: Free
 SubstanceImporter:
   externalObjects: {}
@@ -273,7 +273,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   - serializedVersion: 16
     name: CeramicTile_platform_wall
     prototypeName: CeramicTile
@@ -541,7 +541,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   - serializedVersion: 16
     name: CeramicTile_small_column
     prototypeName: CeramicTile
@@ -809,7 +809,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   - serializedVersion: 16
     name: CeramicTile_wall
     prototypeName: CeramicTile
@@ -1077,7 +1077,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   - serializedVersion: 16
     name: CeramicTile_wall 1
     prototypeName: CeramicTile
@@ -1345,7 +1345,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   - serializedVersion: 16
     name: CeramicTile_wall 2
     prototypeName: CeramicTile
@@ -1613,7 +1613,7 @@ SubstanceImporter:
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
-      loadingBehavior: 1
+      loadingBehavior: 2
   deletedPrototypes: []
   userData: 
   assetBundleName: 
