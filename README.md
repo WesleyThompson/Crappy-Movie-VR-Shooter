@@ -6,7 +6,7 @@ Congratulations! You've landed the star role in Agent X, the next blockbuster fi
 
 This is a VR Shooter game we made in less than 48 hours.
 
-![Game capture](https://lh3.googleusercontent.com/lN_HhTZ91ey0u61y5QRGE7urATNzTcrWqBDVBzFOV0RR8P7CEozQZWLcQ4LtxsNt73Dfko1ERclM)
+![GameCapture](https://lh3.googleusercontent.com/93gjK6lY2Wpq2lPmL3IfTgpzGwLjy_xWd1fGgIv28hGrnUboQncfb3OsxMPRqIp3S0chxWYa16F0)
 
 This was created using Unity 2017.3.0f3
 
