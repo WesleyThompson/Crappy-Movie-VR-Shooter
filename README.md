@@ -1,4 +1,4 @@
-## A Really Shitty Movie: The Game (working title)
+## Director's Cut VR (working title)
 THIS GAME ONLY SUPPORTS THE HTC VIVE CURRENTLY
 Survive the takes of a crappy, low-budget film.
 
